@@ -2,12 +2,16 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-    // 配置mode环境。开发环境就是production，生产环境是development
-    mode: 'production',
+    // 配置mode环境。生产环境是production上线给用户用，会压缩代码，超过244k会警告，开发环境是development
+    mode: 'development',
     // 入口文件,键名index就是外部要找的根目录下的文件名,默认找html后缀
     // 键值就是要转换的那个文件的地址，经过webpack的转换，写进index.html里面
     entry: {
         index: './lib/index.tsx'
+    },
+    // 支持的后缀，不然在import的时候，不写tsx就找不到tsx文件
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
     },
     // 输出目录，要用到绝对路径，所以在上方引入path模块
     output: {
@@ -37,5 +41,21 @@ module.exports = {
             // 引入进index.html文件里
             template: 'index.html'
         })
-    ]
+    ],
+    // 用于将react包排在外面，让其他开发者自己下载，不然这个太大了
+    externals: {
+        react: {
+            // 对应的模块化标准，该怎么引用，比如require('xxx')，这个xxx就是下面的'react'
+            commonjs: 'react',
+            commonjs2: 'react',
+            amd: 'react',
+            root: 'React',
+        },
+        'react-dom': {
+            commonjs: 'react-dom',
+            commonjs2: 'react-dom',
+            amd: 'react-dom',
+            root: 'ReactDOM',
+        },
+    },
 }
