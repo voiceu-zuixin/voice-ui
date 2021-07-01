@@ -29,7 +29,10 @@ module.exports = {
                 //  //表示正则， .要用转义\  ?表示x可有可无  $表示以这个结尾
                 test: /\.tsx?$/,
                 // loader有多种多样，这里用的是其中一个比较好的，一般都是直接输名字然后--dev安装
-                loader: 'awesome-typescript-loader'
+                // loader: 'awesome-typescript-loader',
+                // awesome-typescript-loader会报错
+                loader: 'ts-loader',
+                exclude: /node_modules/,
             }
         ]
     },
