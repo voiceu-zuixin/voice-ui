@@ -6,6 +6,7 @@ import './importIcons'
 // import '../icons/baidu.svg'
 // import '../icons/csdn.svg'
 
+import './icon.scss'
 
 
 // 声明Icon组件接收的类型

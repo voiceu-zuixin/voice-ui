@@ -39,6 +39,13 @@ module.exports = {
                 test: /\.svg$/,
                 // 这个loader会把所有svg弄到index.html最上面，root的div之前
                 loader:'svg-sprite-loader',
+            },
+            {
+                // scss的loader,支持scss或sass
+                // test:/\.s([ac])ss$/,
+                test:/\.s[ac]ss$/,
+                // 使用顺序是从右往左，pop出去的，先sass-loader
+                use:['style-loader','css-loader','sass-loader']
             }
         ]
     },
