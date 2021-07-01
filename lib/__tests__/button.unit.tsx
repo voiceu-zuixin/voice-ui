@@ -1,6 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Button from '../button'
+import Button from '../tsx函数式的使用例子'
 
 describe('button tests', () => {
     it('是个div', () => {
@@ -8,7 +8,7 @@ describe('button tests', () => {
         //     .create(<Button icon="alipay"><span>Click Me</span></Button>)
         //     .toJSON()
         // expect(tree).toMatchSnapshot()
-        const json = renderer.create(<Button />)
+        const json = renderer.create(<Button message="messdiv"/>)
             .toJSON()
 
         expect(json).toMatchSnapshot()
