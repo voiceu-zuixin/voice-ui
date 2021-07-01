@@ -1,6 +1,6 @@
 // webpack的配置文件
 const path = require('path')
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
     // 配置mode环境。生产环境是production上线给用户用，会压缩代码，超过244k会警告，开发环境是development
     // mode: 'development',
@@ -33,6 +33,12 @@ module.exports = {
                 // awesome-typescript-loader会报错
                 loader: 'ts-loader',
                 exclude: /node_modules/,
+            },
+            {
+                // 处理svg图标
+                test: /\.svg$/,
+                // 这个loader会把所有svg弄到index.html最上面，root的div之前
+                loader:'svg-sprite-loader',
             }
         ]
     },

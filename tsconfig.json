@@ -27,8 +27,12 @@
 
     },
     // ts-loader会报错，要把include入口处定义一下，咱们要转译的就是lib下的所有ts文件
+    // types文件也得加入，因为要引入这下面的比如svg格式进组件，相当于ts也得识别他们
+    // 但是加入也没效果，反而是把types放进lib里面就行了
+    // 总之，ts涉及到的文件夹都应该放入include
     "include": [
-        "lib/**/*"
+        "lib/**/*",
+        // "types/**/*",
     ],
     "exclude": [
         "node_modules",
