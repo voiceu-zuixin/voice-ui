@@ -1,7 +1,7 @@
 # 根目录dist下的所有文件都不推送
 /dist/*
 # test 在ci运行的不用提交
-/test-results/
+/test-results/*
 # Logs
 logs
 *.log

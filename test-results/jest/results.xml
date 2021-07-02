@@ -1,14 +1,14 @@
-<testsuites name="jest tests" tests="9" failures="0" time="7.112">
-  <testsuite name="我的第一个测试用例" errors="0" failures="0" skipped="0" timestamp="2021-07-02T13:25:34" time="2.605" tests="1">
+<testsuites name="jest tests" tests="9" failures="0" time="6.901">
+  <testsuite name="我的第一个测试用例" errors="0" failures="0" skipped="0" timestamp="2021-07-02T13:46:20" time="2.609" tests="1">
     <testcase classname="我的第一个测试用例 add(1,2) 等于3" name="我的第一个测试用例 add(1,2) 等于3" time="0.003">
     </testcase>
   </testsuite>
-  <testsuite name="button tests" errors="0" failures="0" skipped="0" timestamp="2021-07-02T13:25:34" time="2.693" tests="1">
+  <testsuite name="button tests" errors="0" failures="0" skipped="0" timestamp="2021-07-02T13:46:20" time="2.642" tests="1">
     <testcase classname="button tests 是个div" name="button tests 是个div" time="0.01">
     </testcase>
   </testsuite>
-  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2021-07-02T13:25:34" time="2.714" tests="5">
-    <testcase classname="classes 接受1 个className" name="classes 接受1 个className" time="0.002">
+  <testsuite name="classes" errors="0" failures="0" skipped="0" timestamp="2021-07-02T13:46:20" time="2.698" tests="5">
+    <testcase classname="classes 接受1 个className" name="classes 接受1 个className" time="0.003">
     </testcase>
     <testcase classname="classes 接受2 个className" name="classes 接受2 个className" time="0">
     </testcase>
@@ -19,10 +19,10 @@
     <testcase classname="classes 接受0 个参数" name="classes 接受0 个参数" time="0">
     </testcase>
   </testsuite>
-  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2021-07-02T13:25:34" time="3.62" tests="2">
-    <testcase classname="icon render successfully" name="icon render successfully" time="0.011">
+  <testsuite name="icon" errors="0" failures="0" skipped="0" timestamp="2021-07-02T13:46:20" time="3.518" tests="2">
+    <testcase classname="icon render successfully" name="icon render successfully" time="0.01">
     </testcase>
-    <testcase classname="icon onClick" name="icon onClick" time="0.039">
+    <testcase classname="icon onClick" name="icon onClick" time="0.037">
     </testcase>
   </testsuite>
 </testsuites>
