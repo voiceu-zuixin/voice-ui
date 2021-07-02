@@ -5,7 +5,7 @@ module.exports = {
     clearMocks: false,
     // 测试覆盖率
     collectCoverage: true,
-    reporters: ["default"],
+    reporters: ["default","jest-junit"],
     
     collectCoverageFrom: ["lib/**/*.{ts,tsx}", "!**/node_modules/**"],
     coverageDirectory: 'coverage',
