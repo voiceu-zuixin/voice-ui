@@ -15,11 +15,12 @@ const Button: React.FunctionComponent<Props> = (props) => {
 
     // 此处定义state，在函数式组件里面，用hooks
     // 用法： const [state, setState] = useState(initialState);
-    const [n, setN] = useState(1)
+    // const [n, setN] = useState(1)
+    const [n] = useState(1)
 
-    const change = () => {
-        setN(n + 1)
-    }
+    // const change = () => {
+    //     setN(n + 1)
+    // }
 
     // 如何使用didMounted生命周期的效果,比如进行ajax的请求
     useEffect(() => {
@@ -37,7 +38,7 @@ const Button: React.FunctionComponent<Props> = (props) => {
         <div>
             <h1>{props.message}</h1>
             <h2>{n}</h2>
-            <button onClick={change}>bian n</button>
+            {/* <button onClick={change}>bian n</button> */}
         </div>
     )
 }
