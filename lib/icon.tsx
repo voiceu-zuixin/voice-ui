@@ -23,12 +23,16 @@ interface IconProps extends React.SVGAttributes<SVGElement> {
 }
 
 // 最好用箭头函数的形式，方便ts进行声明
-const Icon: React.FunctionComponent<IconProps> = (props) => {
+const Icon: React.FunctionComponent<IconProps> = ({
+    className,
+    name,
+    ...restProps
+}) => {
 
-    // 分离出className和其余props
-    const { className, ...restProps } = props
+    // 分离出className和其余props,可以直接写到括号里面
     return (
-        <svg className={classes('fun-ui-icon',className)}
+        <svg
+            className={classes('fun-ui-icon', className)}
             // {}是表示用js语法
             {...restProps}
 
@@ -37,7 +41,7 @@ const Icon: React.FunctionComponent<IconProps> = (props) => {
         // onMouseEnter={props.onMouseEnter}
         >
             {/* 这里的wechat是icons文件夹下svg文件的文件名 */}
-            <use xlinkHref={`#${props.name}`} />
+            <use xlinkHref={`#${name}`} />
         </svg>
     )
 }
