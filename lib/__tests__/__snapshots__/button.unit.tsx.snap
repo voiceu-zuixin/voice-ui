@@ -5,8 +5,5 @@ exports[`button tests 是个div 1`] = `
   <h1>
     messdiv
   </h1>
-  <h2>
-    1
-  </h2>
 </div>
 `;
