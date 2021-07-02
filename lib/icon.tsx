@@ -14,8 +14,8 @@ interface IconProps {
     // icon的名字
     name: string;
     // onClick是鼠标点击svg标签的事件
-    // onClick: React.MouseEventHandler<SVGAElement>
-    onClick:()=>void
+    onClick: React.MouseEventHandler<SVGElement>
+    // onClick:(e:React.MouseEvent)=>void
 }
 
 // 最好用箭头函数的形式，方便ts进行声明
