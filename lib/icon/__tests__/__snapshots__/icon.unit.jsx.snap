@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`icon xxx 1`] = `
+exports[`icon render successfully 1`] = `
 <svg
   className="fun-ui-icon"
 >
+  npm i jsdom --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/jsdom/
   <use
     xlinkHref="#alipay"
   />

@@ -40,7 +40,7 @@ const Icon: React.FunctionComponent<IconProps> = ({
         // onMouseLeave={props.onMouseLeave}
         // onMouseEnter={props.onMouseEnter}
         >
-            
+            npm i jsdom --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/jsdom/
             {/* 这里的wechat是icons文件夹下svg文件的文件名 */}
             <use xlinkHref={`#${name}`} />
         </svg>

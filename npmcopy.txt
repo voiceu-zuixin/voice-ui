@@ -1,0 +1,5 @@
+yarn add --dev @wojtekmaj/enzyme-adapter-react-17
+npm install --save-dev @wojtekmaj/enzyme-adapter-react-17
+npm i @wojtekmaj/enzyme-adapter-react-17 --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/@wojtekmaj/enzyme-adapter-react-17/
+npm i enzyme --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/@wojtekmaj/enzyme/
+npm i enzyme-adapter-react-17-updated --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/@wojtekmaj/enzyme-adapter-react-17-updated/
