@@ -6,7 +6,7 @@ import './importIcons'
 // import '../icons/baidu.svg'
 // import '../icons/csdn.svg'
 
-import classes from './helper/classes'
+import classes from '../helper/classes'
 import './icon.scss'
 
 
