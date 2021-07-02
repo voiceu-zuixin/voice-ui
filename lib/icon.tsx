@@ -11,13 +11,17 @@ import './icon.scss'
 
 // 声明Icon组件接收的类型
 interface IconProps {
+    // icon的名字
     name: string;
+    // onClick是鼠标点击svg标签的事件
+    // onClick: React.MouseEventHandler<SVGAElement>
+    onClick:()=>void
 }
 
 // 最好用箭头函数的形式，方便ts进行声明
 const Icon: React.FunctionComponent<IconProps> = (props) => {
     return (
-        <svg className='fun-ui-icon'>
+        <svg className='fun-ui-icon' onClick={props.onClick}>
             {/* 这里的wechat是icons文件夹下svg文件的文件名 */}
             <use xlinkHref={`#${props.name}`} />
         </svg>
