@@ -40,6 +40,7 @@ const Icon: React.FunctionComponent<IconProps> = ({
         // onMouseLeave={props.onMouseLeave}
         // onMouseEnter={props.onMouseEnter}
         >
+            
             {/* 这里的wechat是icons文件夹下svg文件的文件名 */}
             <use xlinkHref={`#${name}`} />
         </svg>
