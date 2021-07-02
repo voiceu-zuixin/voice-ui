@@ -22,6 +22,13 @@ interface IconProps extends React.SVGAttributes<SVGElement> {
     // onClick:(e:React.MouseEvent)=>void
 }
 
+function xx(){
+    console.log('xx');
+    
+}
+console.log(xx);
+
+
 // 最好用箭头函数的形式，方便ts进行声明
 const Icon: React.FunctionComponent<IconProps> = ({
     className,
