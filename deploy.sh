@@ -1,3 +1,3 @@
 #!/bin/env bash
-npm version patch $1 && \
+npm version $1 && \
     git push --follow-tags
