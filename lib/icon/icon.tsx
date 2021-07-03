@@ -23,8 +23,7 @@ interface IconProps extends React.SVGAttributes<SVGElement> {
 }
 
 function xx(){
-    console.log('xx');
-    console.log('yy');
+    console.log('xxx');
 }
 console.log(xx);
 
