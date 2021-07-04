@@ -10,6 +10,7 @@ module.exports = Object.assign({}, base, {
     // 入口文件,键名index就是外部要找的根目录下的文件名,默认找html后缀
     // 键值就是要转换的那个文件的地址，经过webpack的转换，写进index.html里面
     // 配置plugin
+    // 开发环境下的entry是example.tsx
     entry: {
         index: './example.tsx'
     },

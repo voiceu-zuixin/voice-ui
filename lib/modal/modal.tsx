@@ -33,7 +33,7 @@ const Modal: React.FunctionComponent<ModalProps> = (props) => {
                 {/* 遮罩 */}
                 <div className={sc('mask')} onClick={onClickMaskClose}></div>
 
-                <div className={sc()}>
+                <div className={sc('')}>
                     <div className={sc("close")} onClick={onClickClose}>
                         <Icon name="close" />
                     </div>

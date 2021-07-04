@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 // import Button from './tsx函数式的使用例子'
 
-import Icon from './icon/icon'
+import Icon from '../icon/icon'
 
 // 复制写法，因为在Icon里面没有做好声明，而是直接用箭头函数
 // const fn = (e: React.MouseEvent<SVGAElement | SVGUseElement>) => {
