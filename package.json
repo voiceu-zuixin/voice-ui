@@ -15,15 +15,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/voiceu-zuixin/fun-ui.git"
+    "url": "git+https://github.com/voiceu-zuixin/voice-ui.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/voiceu-zuixin/fun-ui/issues"
+    "url": "https://github.com/voiceu-zuixin/voice-ui/issues"
   },
-  "homepage": "https://github.com/voiceu-zuixin/fun-ui#readme",
+  "homepage": "https://github.com/voiceu-zuixin/voice-ui#readme",
   "devDependencies": {
     "@babel/preset-env": "^7.14.7",
     "@babel/preset-react": "^7.14.5",
