@@ -5,3 +5,5 @@ npm i enzyme --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/@wojte
 npm i enzyme-adapter-react-17-updated --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/@wojtekmaj/enzyme-adapter-react-17-updated/
 npm i jest-junit --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/@wojtekmaj/jest-junit/
 npm i jsdom --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/jsdom/
+
+/^v[0-9]+(\.[0-9]+)*(-.*)*/
