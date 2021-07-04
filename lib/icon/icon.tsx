@@ -22,10 +22,6 @@ interface IconProps extends React.SVGAttributes<SVGElement> {
     // onClick:(e:React.MouseEvent)=>void
 }
 
-function xx(){
-    console.log('test1');
-}
-console.log(xx);
 
 
 // 最好用箭头函数的形式，方便ts进行声明
@@ -46,7 +42,6 @@ const Icon: React.FunctionComponent<IconProps> = ({
         // onMouseLeave={props.onMouseLeave}
         // onMouseEnter={props.onMouseEnter}
         >
-            npm i jsdom --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/jsdom/
             {/* 这里的wechat是icons文件夹下svg文件的文件名 */}
             <use xlinkHref={`#${name}`} />
         </svg>

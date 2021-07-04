@@ -2,4 +2,6 @@
     width: 1.4em;
     height: 1.4em;
     display: inline-block;
+    // 让svg接受外部 color颜色，否则就是自己本身颜色
+    fill: currentColor;
 }
