@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react'
-import Modal,{alert} from './modal'
+import Modal, { alert, confirm } from './modal'
 
 export default function () {
     const [x, setX] = useState(false)
@@ -39,7 +39,12 @@ export default function () {
             <div>
                 <h2>alert</h2>
                 <button onClick={() => { alert("我是alert") }}>click</button>
-               
+                <button onClick={() => {
+                    confirm("我是confirm",
+                        () => {console.log("yes");                        },
+                        () => {console.log("no") })
+                }}>click</button>
+
             </div>
         </Fragment>
 
