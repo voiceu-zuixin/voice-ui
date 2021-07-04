@@ -34,7 +34,7 @@ const Icon: React.FunctionComponent<IconProps> = ({
     // 分离出className和其余props,可以直接写到括号里面
     return (
         <svg
-            className={classes('fun-ui-icon', className)}
+            className={classes('voice-ui-icon', className)}
             // {}是表示用js语法
             {...restProps}
 

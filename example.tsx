@@ -11,7 +11,7 @@ ReactDOM.render(
         <div>
             <header>
                 <div className="logo">
-                    Fun-ui
+                    Voice-ui
                 </div>
             </header>
 

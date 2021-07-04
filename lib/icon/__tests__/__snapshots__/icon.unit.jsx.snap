@@ -2,7 +2,7 @@
 
 exports[`icon render successfully 1`] = `
 <svg
-  className="fun-ui-icon"
+  className="voice-ui-icon"
 >
   npm i jsdom --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/jsdom/
   <use

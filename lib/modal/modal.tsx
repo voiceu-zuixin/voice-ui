@@ -12,7 +12,7 @@ interface ModalProps {
     onCloseMask?: boolean
 }
 
-const scopedClass = scopedClassMaker("fun-ui-modal")
+const scopedClass = scopedClassMaker("voice-ui-modal")
 const sc = scopedClass
 
 const Modal: React.FunctionComponent<ModalProps> = (props) => {
