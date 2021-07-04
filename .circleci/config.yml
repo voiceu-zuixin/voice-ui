@@ -68,7 +68,7 @@ workflows:
             - build
           filters:
             branches:
-              ignore: /deploy/
+              only: /deploy/
             # tags无效，只能用branches
             # tags:
             #   only: /^v.*/
