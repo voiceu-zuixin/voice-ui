@@ -70,19 +70,21 @@ body {
     border-bottom: solid 1px rgb(239, 239, 245);
     align-items: center;
     box-shadow: 0 2px 8px #f0f1f2;
+    padding: 0 32px;
 
     .logo {
-        padding: 0 $padding;
+        
         display: flex;
         align-items: center;
 
         >img {
-            margin-right: 8px;
+            margin-right: 12px;
         }
 
         >span {
             color: $main-color;
-            font-size: 32px;
+            font-size: 28px;
+            font-style: italic;
         }
     }
 }
