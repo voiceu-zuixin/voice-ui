@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before {
+    box-sizing: border-box;
+}
+
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+pre {
+    font-family: "Fira Code Medium", Consolas, monospace;
+}
+
+$padding: 16px;
+$main-color: rgb(69, 84, 145);
+$border-color: #eee;
+
+body {
+    font-size: 16px;
+}
+
+.site-page {
+    background: #ffffff;
+    // background-image: linear-gradient(to top, #eaf5ff 0, #edf9fd 100%);
+    // background-image: linear-gradient(to top, #30cfd0 0, #330867 100%);
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.site-main {
+    padding-top: 16px;
+
+}
+
+.site-header {
+    height: 64px;
+    background-color: #fff;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 64px;
+    // z-index: 100;
+    position: relative;
+    border-bottom: solid 1px rgb(239, 239, 245);
+    align-items: center;
+    box-shadow: 0 2px 8px #f0f1f2;
+
+    .logo {
+        padding: 0 $padding;
+        display: flex;
+        align-items: center;
+
+        >img {
+            margin-right: 8px;
+        }
+
+        >span {
+            color: $main-color;
+            font-size: 32px;
+        }
+    }
+}
+
+.site-aside {
+    border-right: 1px solid #EEEEEE;
+    margin-right: 16px;
+
+    h2 {
+        padding: $padding;
+        font-size: 18px;
+    }
+
+    ul {
+        min-width: 12em;
+
+        >li {
+            a {
+                color: #333;
+                display: block;
+                padding: 8px $padding;
+
+                &:hover {
+                    color: white;
+                }
+
+                &.active {
+                    color: white;
+                    background-color: $main-color;
+                }
+
+                &:hover {
+                    background-color: $main-color;
+                }
+            }
+        }
+    }
+}
+
+.site-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    padding: 16px 0;
+    border-top: 1px solid $border-color;
+}
+
+.example {
+    padding: 16px 0;
+}

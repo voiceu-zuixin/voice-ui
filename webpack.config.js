@@ -46,6 +46,12 @@ module.exports = {
                 test:/\.s[ac]ss$/,
                 // 使用顺序是从右往左，pop出去的，先sass-loader
                 use:['style-loader','css-loader','sass-loader']
+            },
+            {
+              test: /\.(png|jpg|jpeg|gif)$/,
+              use: [
+                'file-loader'
+              ]
             }
         ]
     },
