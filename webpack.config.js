@@ -20,7 +20,7 @@ dirs.forEach(dir => {
         // 什么也不做
     } else if (dir.includes('.tsx')) {
         //如果是根文件夹下的index.tsx就只生成 index: './lib/index.tsx',
-        entry[dir] = `${viewsPath}/${dir}`
+        entry['index'] = `${viewsPath}/${dir}`
     } else {
         //剩下就是各个组件内部的，比如button/button
         entry[(dir + '/' + dir)] = `${viewsPath}/${dir}/${dir}.tsx`
