@@ -3,8 +3,9 @@
         "outDir": "dist",
         "declaration": true,
         "baseUrl": ".",
-        "module": "esnext",
         "target": "es5",
+        "module": "commonjs",
+        // "module": "esnext",
         "lib": [
             "es6",
             "dom"

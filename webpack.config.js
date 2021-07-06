@@ -4,10 +4,11 @@ const path = require('path')
 module.exports = {
     // 配置mode环境。生产环境是production上线给用户用，会压缩代码，超过244k会警告，开发环境是development
     // mode: 'development',
-    // 入口文件,键名index就是外部要找的根目录下的文件名,默认找html后缀
-    // 键值就是要转换的那个文件的地址，经过webpack的转换，写进index.html里面
+    // 入口文件,键名index就是要生成的入口文件的名字
+    // 值就是要转换的那个文件的地址，经过webpack的转换，写进index.html里面
     entry: {
-        index: './lib/index.tsx'
+        index: './lib/index.tsx',
+        'icon/icon':'./lib/icon/icon.tsx'
     },
     // 支持的后缀，不然在import的时候，不写tsx就找不到tsx文件
     resolve: {
