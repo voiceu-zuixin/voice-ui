@@ -1,0 +1,153 @@
+$main-color: #13c2c2;
+$ligten-color: #36cfc9;
+$higten-color: #08979c;
+
+$prefix: cu;
+
+$colors: (
+  red: #f1453d,
+  green: #8cc152,
+  blue: #0086e6,
+  black: #424242,
+  white: #ffffff,
+  grey: #ababab,
+);
+
+$blue: map_get($colors, blue);
+$red: map_get($colors, red);
+$green: map_get($colors, green);
+$black: map_get($colors, black);
+$white: map_get($colors, white);
+$grey: map_get($colors, grey);
+
+$text-color: #333;
+
+$input-height: 32px;
+$input-height-small: 24px;
+$input-height-big: 48px;
+$input-border-color: lighten($text-color, 40%);
+$input-border-radius: 4px;
+
+$font-size: 14px;
+$font-size-small: 12px;
+$font-size-big: 20px;
+
+$transition-duration: 200ms;
+
+@mixin component($name) {
+  .#{$prefix}-#{$name} {
+    @content;
+  }
+}
+
+@function component($name, $modifier:null) {
+  @if $modifier == null {
+    @return ".#{$prefix}-#{$name}"
+  } @else {
+    @return ".#{$prefix}-#{$name}-#{$modifier}"
+  }
+}
+@function componentWithoutDot($name, $modifier:null) {
+  @if $modifier == null {
+    @return "#{$prefix}-#{$name}"
+  } @else {
+    @return "#{$prefix}-#{$name}-#{$modifier}"
+  }
+}
+.cc-button {
+  outline: 0;
+  line-height: 1.499;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  white-space: nowrap;
+  text-align: center;
+  background-image: none;
+  border: 1px solid;
+  -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+  cursor: pointer;
+  -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  transition: all .3s cubic-bezier(.645, .045, .355, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  height: 32px;
+  padding: 0 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  color: rgba(0,0,0,0.65);
+  background-color: #fff;
+  border-color: #d9d9d9;
+  &-primary {
+    color: #fff;
+    background-color: $main-color;
+    border-color: $main-color;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
+    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+  }
+  &-dashed {
+    color: rgba(0,0,0,0.65);
+    background-color: #fff;
+    border-color: #d9d9d9;
+    border-style: dashed;
+  }
+  &-danger {
+    color: #f5222d;
+    background-color: #f5f5f5;
+    border-color: #d9d9d9;
+  }
+  &:focus, &:hover {
+    color: $ligten-color;
+    background-color: #fff;
+    border-color: $ligten-color;
+  }
+  &:hover, &:focus, &:active, &.active {
+    text-decoration: none;
+    background: #fff;
+  }
+  &:active, &.active {
+    color: $higten-color;
+    background-color: #fff;
+    border-color: $higten-color;
+  }
+  &-primary:hover, &-primary:focus {
+    color: #fff;
+    background-color: $ligten-color;
+    border-color: $ligten-color;
+  }
+  &-primary:active, &-primary.active {
+    color: #fff;
+    background-color: $higten-color;
+    border-color: $higten-color;
+  }
+  &-danger:hover {
+    color: #fff;
+    background-color: #ff4d4f;
+    border-color: #ff4d4f;
+  }
+  &-danger:focus {
+    color: #ff4d4f;
+    background-color: #fff;
+    border-color: #ff4d4f;
+  }
+  &-danger:active, &-danger.active {
+    color: #fff;
+    background-color: #cf1322;
+    border-color: #cf1322;
+  }
+  &-dashed:hover, &-dashed:focus {
+    color: $ligten-color;
+    background-color: #fff;
+    border-color: $ligten-color;
+  }
+
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}

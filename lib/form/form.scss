@@ -1,0 +1,132 @@
+$main-color: #13c2c2;
+$ligten-color: #36cfc9;
+$higten-color: #08979c;
+
+$prefix: cu;
+
+$colors: (red: #f1453d,
+  green: #8cc152,
+  blue: #0086e6,
+  black: #424242,
+  white: #ffffff,
+  grey: #ababab,
+);
+
+$blue: map_get($colors, blue);
+$red: map_get($colors, red);
+$green: map_get($colors, green);
+$black: map_get($colors, black);
+$white: map_get($colors, white);
+$grey: map_get($colors, grey);
+
+$text-color: #333;
+
+$input-height: 32px;
+$input-height-small: 24px;
+$input-height-big: 48px;
+$input-border-color: lighten($text-color, 40%);
+$input-border-radius: 4px;
+
+$font-size: 14px;
+$font-size-small: 12px;
+$font-size-big: 20px;
+
+$transition-duration: 200ms;
+
+@mixin component($name) {
+  .#{$prefix}-#{$name} {
+    @content;
+  }
+}
+
+@function component($name, $modifier:null) {
+  @if $modifier==null {
+    @return ".#{$prefix}-#{$name}"
+  }
+
+  @else {
+    @return ".#{$prefix}-#{$name}-#{$modifier}"
+  }
+}
+
+@function componentWithoutDot($name, $modifier:null) {
+  @if $modifier==null {
+    @return "#{$prefix}-#{$name}"
+  }
+
+  @else {
+    @return "#{$prefix}-#{$name}-#{$modifier}"
+  }
+}
+
+@keyframes #{componentWithoutDot(form,slideDown)} {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+
+  100% {
+    opacity: 1;
+    height: $input-height-small;
+  }
+}
+
+#{component(form)} {
+  &-table {
+    border-collapse: collapse;
+  }
+
+  &-td {
+    padding: 8px 8px 8px 0;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  &-tr:first-child &-td {
+    padding-top: 0;
+  }
+
+  &-tr:last-child &-td {
+    padding-bottom: 0;
+  }
+
+  &-vertical &-row {
+    margin: 8px 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-vertical &-label {
+    margin-bottom: 8px;
+  }
+
+  &-vertical &-input-wrapper {
+    margin-bottom: 4px;
+  }
+
+  &-error {
+    font-size: $font-size-small;
+    color: red;
+  }
+
+  &-vertical &-error {
+    height: $input-height-small;
+    animation: #{componentWithoutDot(form,slideDown)} $transition-duration;
+  }
+
+  &-horizontal &-error {
+    line-height: $input-height;
+  }
+
+  &-vertical &-buttons {
+    margin-top: 24px;
+  }
+}
