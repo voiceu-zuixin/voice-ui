@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react'
 import './layout.scss'
-import Aside from './aside'
+import Aside from '../aside/aside'
 
 import { scopedClassMaker } from '../helper/scopedClassMaker'
 
@@ -26,7 +26,7 @@ const Layout: React.FunctionComponent<Props> = (props) => {
 
 export default Layout
 export {default as Layout} from './layout'
-export {default as Header} from './header'
-export {default as Footer} from './footer'
-export {default as Content} from './content'
-export {default as Aside} from './aside'
+export {default as Header} from '../header/header'
+export {default as Footer} from '../footer/footer'
+export {default as Content} from '../content/content'
+export {default as Aside} from '../aside/aside'
