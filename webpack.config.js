@@ -1,15 +1,46 @@
 // webpack的配置文件
 const path = require('path')
 
+const fs = require('fs');
+
+// 定义视图页面路径
+const viewsPath = path.resolve(__dirname, 'lib');
+
+// 定义入口
+const entry = {};
+
+const dirs = fs.readdirSync(viewsPath);
+// 遍历多个入口
+dirs.forEach(dir => {
+    // 如果是这些辅助工具或者scss等文件或文件夹，就忽略
+    if (dir.includes('.scss') || dir.includes('icons') ||
+        dir.includes('styles') || dir.includes('types') ||
+        dir.includes('_other_testsFile') || dir.includes('__tests__') ||
+        dir.includes('helper')) {
+        // 什么也不做
+    } else if (dir.includes('.tsx')) {
+        //如果是根文件夹下的index.tsx就只生成 index: './lib/index.tsx',
+        entry[dir] = `${viewsPath}/${dir}`
+    } else {
+        //剩下就是各个组件内部的，比如button/button
+        entry[(dir + '/' + dir)] = `${viewsPath}/${dir}/${dir}.tsx`
+    }
+});
+
+// console.log(entry);
+
 module.exports = {
     // 配置mode环境。生产环境是production上线给用户用，会压缩代码，超过244k会警告，开发环境是development
     // mode: 'development',
     // 入口文件,键名index就是要生成的入口文件的名字
     // 值就是要转换的那个文件的地址，经过webpack的转换，写进index.html里面
-    entry: {
-        index: './lib/index.tsx',
-        'icon/icon':'./lib/icon/icon.tsx'
-    },
+    // entry: {
+    //     index: './lib/index.tsx',
+    //     'icon/icon':'./lib/icon/icon.tsx'
+    // },
+
+    entry,
+
     // 支持的后缀，不然在import的时候，不写tsx就找不到tsx文件
     resolve: {
         extensions: ['.ts', '.tsx', '.js', '.jsx'],
@@ -39,20 +70,20 @@ module.exports = {
                 // 处理svg图标
                 test: /\.svg$/,
                 // 这个loader会把所有svg弄到index.html最上面，root的div之前
-                loader:'svg-sprite-loader',
+                loader: 'svg-sprite-loader',
             },
             {
                 // scss的loader,支持scss或sass
                 // test:/\.s([ac])ss$/,
-                test:/\.s[ac]ss$/,
+                test: /\.s[ac]ss$/,
                 // 使用顺序是从右往左，pop出去的，先sass-loader
-                use:['style-loader','css-loader','sass-loader']
+                use: ['style-loader', 'css-loader', 'sass-loader']
             },
             {
-              test: /\.(png|jpg|jpeg|gif)$/,
-              use: [
-                'file-loader'
-              ]
+                test: /\.(png|jpg|jpeg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
             }
         ]
     },
