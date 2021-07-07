@@ -20,7 +20,7 @@ const Button: React.FunctionComponent<Props> = (props) => {
 
   if (icon) {
     return (
-      <button className={classname + ' voice-ui-btn-icon'} {...rest} style={{ display: icon && 'flex' }}>
+      <button className={classname + ' voice-ui-btn-icon'} {...rest} style={{ display: icon  }}>
         {icon && <Icon name={icon} />}
         &nbsp;&nbsp;
         <span >{props.children}</span>

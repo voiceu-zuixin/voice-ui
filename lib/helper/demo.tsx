@@ -7,6 +7,7 @@ import './demo.scss'
 interface Props {
   code: string;
   buttonVisible?: boolean;
+  title?:string
 }
 import theme from 'prism-react-renderer/themes/github'
 
@@ -52,7 +53,7 @@ const Demo: React.FunctionComponent<Props> = props => {
   return (
     <div>
       <div className="content-style">
-        <h3 className="content-title">基础用法</h3>
+        <h3 className="content-title">{props.title}</h3>
         <div className="children">
           {props.children}
         </div>
@@ -96,5 +97,10 @@ const Demo: React.FunctionComponent<Props> = props => {
     </div>
   );
 };
+
+
+Demo.defaultProps={
+  title:'基础用法'
+}
 
 export default Demo;

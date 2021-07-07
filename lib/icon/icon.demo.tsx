@@ -16,7 +16,7 @@ export default function IconDemo() {
                 <h2 className='doc-h2'>演示</h2>
                 <div className='display'>
                     <div className='display-card'>
-                        <Demo code={code.default}>
+                        <Demo code={code.default} title='基础用法'>
                             <IconExample />
                         </Demo>
                     </div>
@@ -59,7 +59,7 @@ export default function IconDemo() {
                             </tr>
                             <tr>
                                 <td>className</td>
-                                <td>图标样式名</td>
+                                <td>自定义样式</td>
                                 <td>
                                     <code >string</code>
                                 </td>

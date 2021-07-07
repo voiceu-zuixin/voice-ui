@@ -31,10 +31,10 @@ ReactDOM.render(
                     <h2>组件</h2>
                     <ul>
                         <li>
-                            <NavLink to="/icon">Icon</NavLink>
+                            <NavLink to="/button">Button</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/button">Button</NavLink>
+                            <NavLink to="/icon">Icon</NavLink>
                         </li>
                         <li>
                             <NavLink to="/modal">Modal</NavLink>

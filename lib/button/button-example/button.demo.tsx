@@ -9,18 +9,22 @@ export default function ButtonDemo() {
         <div className='doc'>
             <div className='doc-content'>
                 <h1 className='doc-title'>
-                    <span>图标 Icon</span>
+                    <span>按钮 Button</span>
                 </h1>
-                <p className='doc-introduction'>语义化的矢量图形，提供常用图标</p>
+                <p className='doc-introduction'>按钮用于触发一个即时操作</p>
                 <h2 className='doc-h2'>演示</h2>
                 <div className='display'>
                     <div className='display-card'>
-                        <Demo code={require('!!raw-loader!./button.example.jsx').default}>
+                        <Demo
+                            title='基础用法'
+                            code={require('!!raw-loader!./button.example.jsx').default}>
                             <ButtonExample />
                         </Demo>
                     </div>
                     <div className='display-card'>
-                        <Demo code={require('!!raw-loader!./button.example.2.jsx').default}>
+                        <Demo
+                            title='配合 Icon'
+                            code={require('!!raw-loader!./button.example.2.jsx').default}>
                             <ButtonExample2 />
                         </Demo>
                     </div>
@@ -32,7 +36,7 @@ export default function ButtonDemo() {
                 </div>
 
                 <h2 className='doc-h2'>Props</h2>
-                <p className='doc-introduction'>大小默认为 30px ✖ 30px ，如需改变，请通过className自定义</p>
+                <p className='doc-introduction'>支持原生 button 的其他所有属性</p>
                 <div className="doc-props">
                     <table className='doc-props-table'>
                         <thead>
@@ -46,19 +50,34 @@ export default function ButtonDemo() {
                         </thead>
                         <tbody>
                             <tr>
-                                <td>name</td>
+                                <td>type</td>
+                                <td>按钮类型</td>
+                                <td>
+                                    <code >string</code>
+                                </td>
+                                <td>
+                                    <code >dashed | primary | danger</code>
+                                </td>
+                                <td>
+                                    <code >default</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>icon</td>
                                 <td>图标名称</td>
                                 <td>
                                     <code >string</code>
                                 </td>
-                                <td>——</td>
+                                <td>
+                                    <code >Icon.name</code>
+                                </td>
                                 <td>
                                     <code >undefined</code>
                                 </td>
                             </tr>
                             <tr>
                                 <td>className</td>
-                                <td>图标样式名</td>
+                                <td>自定义样式</td>
                                 <td>
                                     <code >string</code>
                                 </td>

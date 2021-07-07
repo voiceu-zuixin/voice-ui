@@ -176,13 +176,12 @@ $transition-duration: 200ms;
 
 .voice-ui-btn {
   vertical-align: middle;
-  line-height: 28px;
 }
-.voice-ui-btn-icon {
-  vertical-align: middle;
-  line-height: 28px;
-  padding: 0 10px 0 0;
 
+.voice-ui-btn-icon {
+  display: inline-flex;
+  line-height: 30px;
+  padding: 0 10px 0 0;
 }
 
 button,

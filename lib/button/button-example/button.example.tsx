@@ -5,10 +5,18 @@ import './button.example.scss'
 const ButtonExample1: React.FunctionComponent = () => {
 	return (
 		<div>
-			<Button type="primary">Primary</Button>
-			<Button>Default</Button>
-			<Button type="dashed">Dashed</Button>
-			<Button type="danger">Danger</Button>			
+			<span style={{ marginRight: '10px' }}>
+				<Button>Default</Button>
+			</span>
+			<span style={{ marginRight: '10px' }}>
+				<Button type="dashed">Dashed</Button>
+			</span>
+			<span style={{ marginRight: '10px' }}>
+				<Button type="primary">Primary</Button>
+			</span>
+			<span style={{ marginRight: '10px' }}>
+				<Button type="danger">Danger</Button>
+			</span>
 		</div>
 	)
 }
