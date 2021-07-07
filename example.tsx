@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './example.scss'
 import { HashRouter as Router, Route, NavLink } from 'react-router-dom'
 // import IconExample from './lib/icon/icon.example'
 import IconDemo from './lib/icon/icon.demo'
@@ -11,7 +12,6 @@ import SwitchExample from './lib/switch/switch.example'
 import ModalExample from './lib/modal/modal.example'
 import LayoutExample from './lib/layout/layout.example'
 import { Layout, Aside, Header, Content, Footer } from './lib/layout/layout'
-import './example.scss'
 const logo = require('./logo.png')
 
 ReactDOM.render(
@@ -20,7 +20,7 @@ ReactDOM.render(
             <Header className="site-header">
                 <div className="logo">
                     <img src={logo.default} width="48" height="48" alt="" />
-                    
+
                     <span>Voice ui</span>
                 </div>
             </Header>

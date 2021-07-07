@@ -68,19 +68,3 @@
         transition: color .3s;
     }
 }
-
-button {
-    box-sizing: border-box;
-    height: 32px;
-    margin: 0 4px;
-
-    cursor: pointer;
-
-    &:first-child {
-        margin-left: 0;
-    }
-
-    &:last-child {
-        margin-right: 0;
-    }
-}

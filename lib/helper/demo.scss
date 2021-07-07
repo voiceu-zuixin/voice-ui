@@ -1,0 +1,35 @@
+.prism-code {
+    padding: 20px 24px;
+    border-top: 1px solid rgb(218, 215, 215);
+    // width: fit-content;
+    // background-color: rgb(255, 255, 255);
+    // padding: 19px 24px 30px 24px;
+
+}
+
+.content-style {
+    padding: 19px 24px 20px 24px;
+
+    & .content-title {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+
+
+    & .content-button {
+        text-align: right;
+
+        .demo-icon {
+            height: 1.2em;
+            width: 1.2em;
+            line-height: 1.2em;
+            text-align: center;
+            display: inline-block;
+            position: relative;
+            fill: currentColor;
+            transform: translateZ(0);
+            cursor: pointer;
+            margin-right: 10px;
+        }
+    }
+}

@@ -32,8 +32,8 @@ a {
 }
 
 pre {
-    // font-family: "Fira Code Medium", Consolas, monospace;
-    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
+    font-family: "Fira Code Medium", Consolas, monospace;
+    // font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
 }
 
 $padding: 16px;
@@ -53,9 +53,88 @@ body {
 }
 
 .site-main {
-    padding-top: 16px;
+    .doc {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 32px 24px 56px 56px;
+
+        & .doc-content {
+            width: 100%;
+            margin-right: 36px;
+
+            & .doc-title {
+                // --的属性会优先继承之前的，没有的话才用--开头的
+                --bezier: cubic-bezier(0.4, 0, 0.2, 1);
+                font-size: 30px;
+                margin: 0px 0 20px 0;
+                --bar-color: #18a058;
+                --bar-width: 4px;
+                font-weight: 500;
+                --text-color: rgb(31, 34, 37);
+                --prefix-width: 16px;
+
+            }
+
+            & .doc-introduction {
+                --bezier: cubic-bezier(0.4, 0, 0.2, 1);
+                font-size: 14px;
+                line-height: 1.6;
+                margin: 16px 0 16px 0;
+                --text-color: rgb(51, 54, 57);
+            }
+
+            & .doc-h2 {
+                --bezier: cubic-bezier(0.4, 0, 0.2, 1);
+                --font-size: 22px;
+                margin: 28px 0 20px 0;
+                --bar-color: #18a058;
+                --bar-width: 4px;
+                --font-weight: 500;
+                --text-color: rgb(31, 34, 37);
+                --prefix-width: 16px;
+            }
+
+            & .display {
+                display: grid;
+                gap: 16px;
+                grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr);
+                align-items: flex-start;
+
+                & .display-card {
+                    border-radius: 3px;
+                    line-height: 1.6;
+                    box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.08), 0 3px 6px 0 rgba(0, 0, 0, 0.06), 0 5px 12px 4px rgba(0, 0, 0, 0.04);
+                    // padding: 19px 24px 30px 24px;
+                    font-size: 14px;
+
+
+                    border: 1px solid rgb(218, 215, 215);
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    box-sizing: border-box;
+                    position: relative;
+                    transition: color .3s cubic-bezier(0.4, 0, 0.2, 1),
+                        background-color .3s cubic-bezier(0.4, 0, 0.2, 1),
+                        box-shadow .3s cubic-bezier(0.4, 0, 0.2, 1),
+                        border-color .3s cubic-bezier(0.4, 0, 0.2, 1);
+
+                    overflow: hidden;
+
+                   
+                }
+
+            }
+        }
+
+        & .doc-aside {
+            width: 144px;
+        }
+    }
 
 }
+
+
 
 .site-header {
     height: 64px;
@@ -73,7 +152,7 @@ body {
     padding: 0 32px;
 
     .logo {
-        
+
         display: flex;
         align-items: center;
 
@@ -91,7 +170,6 @@ body {
 
 .site-aside {
     border-right: 1px solid #EEEEEE;
-    margin-right: 16px;
 
     h2 {
         padding: $padding;

@@ -1,9 +1,12 @@
-[class^=voice-ui-]{
+[class^=voice-ui-] {
     box-sizing: border-box;
-    &::before{
+
+    &::before {
         box-sizing: border-box;
     }
-    &::after{
+
+    &::after {
         box-sizing: border-box;
     }
 }
+

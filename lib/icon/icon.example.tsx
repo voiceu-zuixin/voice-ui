@@ -4,14 +4,22 @@ import Icon from './icon'
 const IconExample: React.FunctionComponent = () => {
     return (
         <div>
-            <Icon name='alipay'/>
-            <Icon name='wechat'/>
-            <Icon name='qq'/>
-            <Icon name='guitar'/>
-            <Icon name='facebook'/>
-            <Icon name='twitter'/>
-            <Icon name='weibo'/>
-            <Icon name='call'/>
+            <span style={{ marginRight: '10px' }}>
+                <Icon name='alipay' />
+            </span>
+            <span style={{ marginRight: '10px' }}>
+                <Icon name='wechat' />
+            </span>
+            <Icon name='qq' />
+            <span style={{ marginRight: '10px' }}>
+            </span>
+            <span style={{ marginRight: '10px' }}>
+            </span>
+            <Icon name='guitar' />
+            <Icon name='facebook' />
+            <Icon name='twitter' />
+            <Icon name='weibo' />
+            <Icon name='call' />
         </div>
     )
 }
