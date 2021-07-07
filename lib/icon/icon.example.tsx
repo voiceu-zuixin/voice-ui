@@ -10,16 +10,24 @@ const IconExample: React.FunctionComponent = () => {
             <span style={{ marginRight: '10px' }}>
                 <Icon name='wechat' />
             </span>
-            <Icon name='qq' />
             <span style={{ marginRight: '10px' }}>
+                <Icon name='qq' />
             </span>
             <span style={{ marginRight: '10px' }}>
+                <Icon name='guitar' />
             </span>
-            <Icon name='guitar' />
-            <Icon name='facebook' />
-            <Icon name='twitter' />
-            <Icon name='weibo' />
-            <Icon name='call' />
+            <span style={{ marginRight: '10px' }}>
+                <Icon name='facebook' />
+            </span>
+            <span style={{ marginRight: '10px' }}>
+                <Icon name='twitter' />
+            </span>
+            <span style={{ marginRight: '10px' }}>
+                <Icon name='weibo' />
+            </span>
+            <span style={{ marginRight: '10px' }}>
+                <Icon name='call' />
+            </span>
         </div>
     )
 }

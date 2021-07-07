@@ -10,6 +10,7 @@
 .content-style {
     padding: 19px 24px 20px 24px;
 
+
     & .content-title {
         font-size: 18px;
         padding-bottom: 15px;
@@ -25,6 +26,7 @@
             line-height: 1.2em;
             text-align: center;
             display: inline-block;
+            vertical-align:middle;
             position: relative;
             fill: currentColor;
             transform: translateZ(0);

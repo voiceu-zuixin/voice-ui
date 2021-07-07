@@ -129,6 +129,10 @@ body {
 
         & .doc-aside {
             width: 144px;
+            div{
+                margin-bottom: 10px;
+                border: 1px solid black;
+            }
         }
     }
 

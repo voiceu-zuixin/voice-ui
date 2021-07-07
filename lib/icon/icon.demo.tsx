@@ -20,11 +20,11 @@ export default function IconDemo() {
                             <IconExample />
                         </Demo>
                     </div>
-                    <div className='display-card'>
+                    {/* <div className='display-card'>
                         <Demo code={code.default}>
                             <IconExample />
                         </Demo>
-                    </div>
+                    </div> */}
                     {/* <div className='display-card'>
                         <Demo code={code.default}>
                             <IconExample />
@@ -34,7 +34,9 @@ export default function IconDemo() {
             </div>
 
             <div className="doc-aside">
-                ?
+                <div>个人简历</div>
+                <div>多轨音乐编辑器</div>
+                <div>电商后台管理系统</div>
             </div>
         </div>
     )
