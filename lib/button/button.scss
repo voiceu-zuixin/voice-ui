@@ -4,8 +4,7 @@ $higten-color: #08979c;
 
 $prefix: cu;
 
-$colors: (
-  red: #f1453d,
+$colors: (red: #f1453d,
   green: #8cc152,
   blue: #0086e6,
   black: #424242,
@@ -41,19 +40,25 @@ $transition-duration: 200ms;
 }
 
 @function component($name, $modifier:null) {
-  @if $modifier == null {
+  @if $modifier==null {
     @return ".#{$prefix}-#{$name}"
-  } @else {
+  }
+
+  @else {
     @return ".#{$prefix}-#{$name}-#{$modifier}"
   }
 }
+
 @function componentWithoutDot($name, $modifier:null) {
-  @if $modifier == null {
+  @if $modifier==null {
     @return "#{$prefix}-#{$name}"
-  } @else {
+  }
+
+  @else {
     @return "#{$prefix}-#{$name}-#{$modifier}"
   }
 }
+
 .cc-button {
   outline: 0;
   line-height: 1.499;
@@ -64,8 +69,8 @@ $transition-duration: 200ms;
   text-align: center;
   background-image: none;
   border: 1px solid;
-  -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.015);
-  box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.015);
   cursor: pointer;
   -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
   transition: all .3s cubic-bezier(.645, .045, .355, 1);
@@ -79,68 +84,89 @@ $transition-duration: 200ms;
   padding: 0 15px;
   font-size: 14px;
   border-radius: 4px;
-  color: rgba(0,0,0,0.65);
+  color: rgba(0, 0, 0, 0.65);
   background-color: #fff;
   border-color: #d9d9d9;
+
   &-primary {
     color: #fff;
     background-color: $main-color;
     border-color: $main-color;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.12);
-    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.045);
-    box-shadow: 0 2px 0 rgba(0,0,0,0.045);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
   }
+
   &-dashed {
-    color: rgba(0,0,0,0.65);
+    color: rgba(0, 0, 0, 0.65);
     background-color: #fff;
     border-color: #d9d9d9;
     border-style: dashed;
   }
+
   &-danger {
     color: #f5222d;
     background-color: #f5f5f5;
     border-color: #d9d9d9;
   }
-  &:focus, &:hover {
+
+  &:focus,
+  &:hover {
     color: $ligten-color;
     background-color: #fff;
     border-color: $ligten-color;
   }
-  &:hover, &:focus, &:active, &.active {
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
     text-decoration: none;
     background: #fff;
   }
-  &:active, &.active {
+
+  &:active,
+  &.active {
     color: $higten-color;
     background-color: #fff;
     border-color: $higten-color;
   }
-  &-primary:hover, &-primary:focus {
+
+  &-primary:hover,
+  &-primary:focus {
     color: #fff;
     background-color: $ligten-color;
     border-color: $ligten-color;
   }
-  &-primary:active, &-primary.active {
+
+  &-primary:active,
+  &-primary.active {
     color: #fff;
     background-color: $higten-color;
     border-color: $higten-color;
   }
+
   &-danger:hover {
     color: #fff;
     background-color: #ff4d4f;
     border-color: #ff4d4f;
   }
+
   &-danger:focus {
     color: #ff4d4f;
     background-color: #fff;
     border-color: #ff4d4f;
   }
-  &-danger:active, &-danger.active {
+
+  &-danger:active,
+  &-danger.active {
     color: #fff;
     background-color: #cf1322;
     border-color: #cf1322;
   }
-  &-dashed:hover, &-dashed:focus {
+
+  &-dashed:hover,
+  &-dashed:focus {
     color: $ligten-color;
     background-color: #fff;
     border-color: $ligten-color;
@@ -148,6 +174,20 @@ $transition-duration: 200ms;
 
 }
 
-button, html [type="button"], [type="reset"], [type="submit"] {
+.voice-ui-btn {
+  vertical-align: middle;
+  line-height: 28px;
+}
+.voice-ui-btn-icon {
+  vertical-align: middle;
+  line-height: 28px;
+  padding: 0 10px 0 0;
+
+}
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }

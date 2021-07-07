@@ -56,42 +56,30 @@ body {
     .doc {
         display: flex;
         flex-wrap: nowrap;
-        padding: 32px 24px 56px 56px;
+        padding: 32px 30px 56px 64px;
 
         & .doc-content {
             width: 100%;
-            margin-right: 36px;
+            margin-right: 40px;
 
             & .doc-title {
                 // --的属性会优先继承之前的，没有的话才用--开头的
-                --bezier: cubic-bezier(0.4, 0, 0.2, 1);
                 font-size: 30px;
                 margin: 0px 0 20px 0;
-                --bar-color: #18a058;
-                --bar-width: 4px;
                 font-weight: 500;
-                --text-color: rgb(31, 34, 37);
-                --prefix-width: 16px;
-
             }
 
             & .doc-introduction {
-                --bezier: cubic-bezier(0.4, 0, 0.2, 1);
                 font-size: 14px;
                 line-height: 1.6;
-                margin: 16px 0 16px 0;
-                --text-color: rgb(51, 54, 57);
+                margin: 20px 0 26px 0;
             }
 
             & .doc-h2 {
-                --bezier: cubic-bezier(0.4, 0, 0.2, 1);
-                --font-size: 22px;
-                margin: 28px 0 20px 0;
-                --bar-color: #18a058;
-                --bar-width: 4px;
-                --font-weight: 500;
-                --text-color: rgb(31, 34, 37);
-                --prefix-width: 16px;
+                font-size: 22px;
+                margin: 30px 0 20px 0;
+                font-weight: 500;
+                color: rgb(31, 34, 37);
             }
 
             & .display {
@@ -99,6 +87,7 @@ body {
                 gap: 16px;
                 grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr);
                 align-items: flex-start;
+                padding-bottom: 20px;
 
                 & .display-card {
                     border-radius: 3px;
@@ -120,16 +109,62 @@ body {
                         border-color .3s cubic-bezier(0.4, 0, 0.2, 1);
 
                     overflow: hidden;
-
-                   
                 }
 
+            }
+
+            & .doc-props-title {
+                margin: 20px 0 30px;
+            }
+            
+            & .doc-props{
+                // width: 80%;
+                text-align: center;
+            }
+
+            & .doc-props-table {
+                display: table;
+                box-sizing: border-box;
+                text-indent: initial;
+                border-spacing: 2px;
+                // border-color: grey;
+                border-collapse: collapse;
+                // line-height: 1.8em;
+                width: 100%;
+                // border-bottom: 1px solid rgba(0, 0, 0, .15);
+                text-align: center;
+                font-size: 14px;
+                border: 1px solid rgba(239, 239, 245, 1);
+
+                tr {
+                    border-bottom: 1px solid rgb(230, 230, 230);
+                    
+                    th {
+                        padding: 15px 10px;
+                        background-color: rgba(250, 250, 252, 1);
+                    }
+
+                    td {
+                        padding: 15px 10px;
+                    }
+                }
+
+
+                code {
+                    margin: 0 1px;
+                    padding: .2em .4em;
+                    font-size: .9em;
+                    background: #f2f4f5;
+                    border: 1px solid #f0f0f0;
+                    border-radius: 3px;
+                }
             }
         }
 
         & .doc-aside {
-            width: 144px;
-            div{
+            width: 160px;
+
+            div {
                 margin-bottom: 10px;
                 border: 1px solid black;
             }
@@ -174,6 +209,7 @@ body {
 
 .site-aside {
     border-right: 1px solid #EEEEEE;
+    width: 280px;
 
     h2 {
         padding: $padding;
@@ -185,9 +221,12 @@ body {
 
         >li {
             a {
+                height: 42px;
+                line-height: 28px;
                 color: #333;
                 display: block;
                 padding: 8px $padding;
+                padding-left: 50px;
 
                 &:hover {
                     color: white;

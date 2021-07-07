@@ -31,6 +31,46 @@ export default function IconDemo() {
                         </Demo>
                     </div> */}
                 </div>
+
+                <h2 className='doc-h2'>Props</h2>
+                <p className='doc-introduction'>大小默认为 30px ✖ 30px ，如需改变，请通过className自定义</p>
+                <div className="doc-props">
+                    <table className='doc-props-table'>
+                        <thead>
+                            <tr>
+                                <th>参数</th>
+                                <th>说明</th>
+                                <th>类型</th>
+                                <th>可选值</th>
+                                <th>默认值</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>name</td>
+                                <td>图标名称</td>
+                                <td>
+                                    <code >string</code>
+                                </td>
+                                <td>——</td>
+                                <td>
+                                    <code >undefined</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>className</td>
+                                <td>图标样式名</td>
+                                <td>
+                                    <code >string</code>
+                                </td>
+                                <td>——</td>
+                                <td>
+                                    <code >undefined</code>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <div className="doc-aside">

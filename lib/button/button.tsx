@@ -17,10 +17,20 @@ const Button: React.FunctionComponent<Props> = (props) => {
     '': true,
     [type || '']: true
   }, { extra: className });
+
+  if (icon) {
+    return (
+      <button className={classname + ' voice-ui-btn-icon'} {...rest} style={{ display: icon && 'flex' }}>
+        {icon && <Icon name={icon} />}
+        &nbsp;&nbsp;
+        <span >{props.children}</span>
+        &nbsp;
+      </button>
+    )
+  }
   return (
-    <button className={ classname } { ...rest } style={ { display: icon && 'flex' } }>
-      { icon && <Icon name={ icon }/> }
-      <span>{ props.children }</span>
+    <button className={classname + ' voice-ui-btn'} {...rest} style={{ display: icon && 'flex' }}>
+      <span >{props.children}</span>
     </button>
   );
 };

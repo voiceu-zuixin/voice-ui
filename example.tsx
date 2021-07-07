@@ -6,6 +6,7 @@ import { HashRouter as Router, Route, NavLink } from 'react-router-dom'
 import IconDemo from './lib/icon/icon.demo'
 // import ButtonExample from './lib/icon/button.example'
 import ButtonDemo from './lib/button/button-example/button.demo'
+import FormDemo from './lib/form/demo/form.demo'
 import InputDemo from './lib/input/input-example/input.demo'
 import SwitchExample from './lib/switch/switch.example'
 
@@ -47,6 +48,9 @@ ReactDOM.render(
                         <li>
                             <NavLink to="/input">input</NavLink>
                         </li>
+                        <li>
+                            <NavLink to="/form">form</NavLink>
+                        </li>
                     </ul>
                 </Aside>
 
@@ -57,6 +61,7 @@ ReactDOM.render(
                     <Route path="/layout" component={LayoutExample}></Route>
                     <Route path="/switch" component={SwitchExample}></Route>
                     <Route path="/input" component={InputDemo}></Route>
+                    <Route path="/form" component={FormDemo}></Route>
                 </Content>
             </Layout>
         </Layout>
