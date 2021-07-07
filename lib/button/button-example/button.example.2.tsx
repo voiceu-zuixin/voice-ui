@@ -5,7 +5,7 @@ import './button.example.scss'
 const ButtonExample2: React.FunctionComponent = () => {
 	return (
 		// 这个的高度有点问题，来个内联卡住
-		<div style={{ height: '32px' }}>
+		<div style={{ height: '36px' }}>
 			<span style={{ marginRight: '10px' }}>
 				<Button icon="alipay">没钱了</Button>
 			</span>

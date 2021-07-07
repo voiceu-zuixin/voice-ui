@@ -4,7 +4,7 @@ import './button.example.scss'
 
 const ButtonExample1: React.FunctionComponent = () => {
 	return (
-		<div>
+		<div style={{ height: '36px' }}>
 			<span style={{ marginRight: '10px' }}>
 				<Button>Default</Button>
 			</span>

@@ -95,6 +95,7 @@ export default function ButtonDemo() {
                 <div>个人简历</div>
                 <div>多轨音乐编辑器</div>
                 <div>电商后台管理系统</div>
+                <div>技术博客</div>
             </div>
         </div>
     )
