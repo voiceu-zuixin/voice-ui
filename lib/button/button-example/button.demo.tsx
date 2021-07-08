@@ -11,7 +11,7 @@ export default function ButtonDemo() {
                 <h1 className='doc-title'>
                     <span>按钮 Button</span>
                 </h1>
-                <p className='doc-introduction'>按钮用于触发一个即时操作</p>
+                <p className='doc-introduction'>按钮用于触发一个即时操作， 哪里不会点哪里</p>
                 <h2 className='doc-h2'>演示</h2>
                 <div className='display'>
                     <div className='display-card'>

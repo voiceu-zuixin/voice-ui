@@ -8,11 +8,12 @@ import IconDemo from './lib/icon/icon.demo'
 import ButtonDemo from './lib/button/button-example/button.demo'
 import FormDemo from './lib/form/demo/form.demo'
 import InputDemo from './lib/input/input-example/input.demo'
-import SwitchExample from './lib/switch/switch.example'
+// import SwitchExample from './lib/switch/switch.example'
+import SwitchDemo from './lib/switch/switch-example/switch.demo'
 
 // import ModalExample from './lib/modal/modal-example/modal.example.1'
 import ModalDemo from './lib/modal/modal-example/modal.demo'
-import LayoutExample from './lib/layout/layout.example'
+import LayoutDemo from './lib/layout/layout-example/layout.demo'
 import { Layout, Aside, Header, Content, Footer } from './lib/layout/layout'
 const logo = require('./logo.png')
 
@@ -32,25 +33,25 @@ ReactDOM.render(
                     <h2>组件</h2>
                     <ul>
                         <li>
-                            <NavLink to="/button">Button</NavLink>
+                            <NavLink to="/button">按钮 Button</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/icon">Icon</NavLink>
+                            <NavLink to="/icon">图标 Icon</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/modal">Modal</NavLink>
+                            <NavLink to="/modal">模态框 Modal</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/layout">Layout</NavLink>
+                            <NavLink to="/layout">布局 Layout</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/switch">switch</NavLink>
+                            <NavLink to="/switch">开关 switch</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/input">input</NavLink>
+                            <NavLink to="/input">输入框 input</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/form">form</NavLink>
+                            <NavLink to="/form">表单 form</NavLink>
                         </li>
                     </ul>
                 </Aside>
@@ -59,8 +60,8 @@ ReactDOM.render(
                     <Route path="/icon" component={IconDemo}></Route>
                     <Route path="/button" component={ButtonDemo}></Route>
                     <Route path="/modal" component={ModalDemo}></Route>
-                    <Route path="/layout" component={LayoutExample}></Route>
-                    <Route path="/switch" component={SwitchExample}></Route>
+                    <Route path="/layout" component={LayoutDemo}></Route>
+                    <Route path="/switch" component={SwitchDemo}></Route>
                     <Route path="/input" component={InputDemo}></Route>
                     <Route path="/form" component={FormDemo}></Route>
                 </Content>

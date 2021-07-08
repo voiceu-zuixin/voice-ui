@@ -1,0 +1,35 @@
+// $xyzcolor:#455491;
+// $xyzcolor:#5645ec;
+@import '../../../example.scss';
+$xyzcolor: $main-color;
+$xyzcolor: rgb(201, 212, 168);
+
+.x {
+  height: 40px;
+  background: $xyzcolor;
+  padding: 10px;
+  color: rgb(36, 17, 17);
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.y {
+  background: lighten($xyzcolor, 5%);
+  padding: 10px;
+  color: rgb(80, 57, 57);
+  font-size: 18px;
+}
+
+.z {
+  background: lighten($xyzcolor, 10%);
+  width: 100px;
+  padding: 10px;
+  color: rgb(46, 40, 59);
+  font-size: 18px;
+}
+
+.z+.y,
+.y+.z,
+.z+.voiceu-ui-layout {
+  margin-left: 0px;
+}
