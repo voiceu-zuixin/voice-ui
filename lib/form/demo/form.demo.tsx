@@ -22,7 +22,7 @@ export default function FormDemo() {
         </div>
 
         <h2 className='doc-h2'>Props</h2>
-        <p className='doc-introduction'>支持原生 button 的其他所有属性</p>
+        <p className='doc-introduction'>提供一些 Form 的常用 api</p>
         <div className="doc-props">
           <table className='doc-props-table'>
             <thead>
@@ -117,7 +117,7 @@ export default function FormDemo() {
 
 
         <h2 className='doc-h2'>rules</h2>
-        <p className='doc-introduction'>rules用于验证表单，配合ValidateFields函数更新error</p>
+        <p className='doc-introduction'>rules 用于验证表单，配合 ValidateFields 函数更新 error</p>
         <div className="doc-props">
 
           <table className='doc-props-table'>
@@ -214,7 +214,7 @@ export default function FormDemo() {
         </div>
 
         <h2 className='doc-h2'>fields</h2>
-        <p className='doc-introduction'>fields设置表单栏的label等</p>
+        <p className='doc-introduction'>fields 用于设置表单栏的 label 等</p>
         <div className="doc-props">
 
           <table className='doc-props-table'>

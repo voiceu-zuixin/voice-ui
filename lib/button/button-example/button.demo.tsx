@@ -28,11 +28,6 @@ export default function ButtonDemo() {
                             <ButtonExample2 />
                         </Demo>
                     </div>
-                    {/* <div className='display-card'>
-                        <Demo code={code.default}>
-                            <IconExample />
-                        </Demo>
-                    </div> */}
                 </div>
 
                 <h2 className='doc-h2'>Props</h2>

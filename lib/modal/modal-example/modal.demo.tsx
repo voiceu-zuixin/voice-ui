@@ -10,7 +10,7 @@ export default function ModalDemo() {
     <div className='doc'>
       <div className='doc-content'>
         <h1 className='doc-title'>
-          <span>模态框 Modal</span>
+          <span>对话框 Modal</span>
         </h1>
         <p className='doc-introduction'>Modal会弹出来，里面有一些好康的</p>
         <h2 className='doc-h2'>演示</h2>

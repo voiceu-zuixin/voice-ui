@@ -13,7 +13,7 @@ const ButtonExample2: React.FunctionComponent = () => {
 				<Button icon="wechat">余额为 0</Button>
 			</span>
 			<span style={{ marginRight: '10px' }}>
-				<a href="https://blog.csdn.net/Voiceu?spm=1000.2115.3001.5343&type=blog" target="_blank"  >
+				<a href="https://blog.csdn.net/Voiceu?spm=1000.2115.3001.5343&type=lately" target="_blank"  >
 					<Button icon="csdn">康康我的博客，夹带私货</Button>
 				</a>
 			</span>

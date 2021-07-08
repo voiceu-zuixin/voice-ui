@@ -12,7 +12,7 @@ module.exports = Object.assign({}, base, {
     // 配置plugin
     // 开发环境下的entry是example.tsx
     entry: {
-        index: './example.tsx'
+        index: './index.tsx'
     },
     plugins: [
         /* 
@@ -23,7 +23,7 @@ module.exports = Object.assign({}, base, {
         // 可以生成创建html入口文件，比如单页面可以生成一个html文件入口
         // 用于生成html里面的script src标签，引入经过转换的ts文件
         new HtmlWebpackPlugin({
-            title: 'FunUI - React',
+            title: 'voice-ui',
             // index.html文件作为模板，所以会覆盖上面的title
             template: 'example.html'
         })

@@ -79,6 +79,15 @@ body {
                 margin: 20px 0 26px 0;
             }
 
+            & .doc-introduction-ul {
+                list-style: disc;
+                list-style-position: inside;
+
+                li {
+                    margin-bottom: 14px;
+                }
+            }
+
             & .doc-h2 {
                 font-size: 22px;
                 margin: 30px 0 20px 0;
@@ -217,35 +226,39 @@ body {
     border-right: 1px solid #EEEEEE;
     width: 280px;
 
-    h2 {
+    .site-aside-title {
         padding: $padding;
-        font-size: 18px;
+        font-size: 16px;
+        padding-left: 40px;
+        color: gray;
+        font-weight: bolder;
     }
 
     ul {
         min-width: 12em;
 
-        >li {
+        li {
+            margin-bottom: 5px;
+
             a {
                 height: 42px;
                 line-height: 28px;
                 color: #333;
                 display: block;
                 padding: 8px $padding;
-                padding-left: 50px;
+                padding-left: 52px;
                 font-size: 14px;
 
-                &:hover {
-                    color: white;
-                }
 
                 &.active {
                     color: white;
-                    background-color: lighten($main-color, 15%);
+                    color: rgb(87, 134, 111);
+                    // background-color: lighten(rgb(87, 134, 111), 28%);
+                    background-color: lighten($main-color, 28%);
                 }
 
                 &:hover {
-                    background-color: lighten($main-color, 15%);
+                    color: lighten($main-color, 5%);
                 }
             }
         }
