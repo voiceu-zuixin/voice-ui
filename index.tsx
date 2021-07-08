@@ -10,9 +10,7 @@ import ModalDemo from './lib/modal/modal-example/modal.demo'
 import LayoutDemo from './lib/layout/layout-example/layout.demo'
 import { Layout, Aside, Header, Content, Footer } from './lib/layout/layout'
 import './index.scss'
-import Install from './webIntroduce/install'
 import Introduction from './webIntroduce/introduction'
-import Operation from './webIntroduce/operation'
 
 const logo = require('./logo.png')
 
@@ -32,12 +30,6 @@ ReactDOM.render(
                     <ul>
                         <li>
                             <NavLink to="/introduction">Voice UI</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/install">安装</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to="/operation">快速上手</NavLink>
                         </li>
                     </ul>
 
@@ -76,9 +68,7 @@ ReactDOM.render(
                     <Route path="/switch" component={SwitchDemo}></Route>
                     <Route path="/input" component={InputDemo}></Route>
                     <Route path="/form" component={FormDemo}></Route>
-                    <Route path="/install" component={Install}></Route>
                     <Route path="/introduction" component={Introduction}></Route>
-                    <Route path="/operation" component={Operation}></Route>
                 </Content>
             </Layout>
         </Layout>

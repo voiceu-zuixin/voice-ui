@@ -79,6 +79,23 @@ body {
                 margin: 20px 0 26px 0;
             }
 
+            & .doc-notice {
+                border-left: 4px solid rgb(224, 224, 230);
+                padding-left: 12px;
+            }
+
+            & .doc-introduction-code {
+                width: 80%;
+                background: #f5f5f5;
+                padding: 12px 20px;
+                border: 1px solid rgb(230, 223, 223);
+                margin-bottom: 10px;
+
+                & .token-function {
+                    color: #f81d22;
+                }
+            }
+
             & .doc-introduction-ul {
                 list-style: disc;
                 list-style-position: inside;
