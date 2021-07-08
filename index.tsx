@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter as Router, Route, NavLink } from 'react-router-dom'
+import { HashRouter as Router, Route, NavLink, Switch } from 'react-router-dom'
 import IconDemo from './lib/icon/icon.demo'
 import ButtonDemo from './lib/button/button-example/button.demo'
 import FormDemo from './lib/form/demo/form.demo'
@@ -61,14 +61,17 @@ ReactDOM.render(
                 </Aside>
 
                 <Content className="site-main">
-                    <Route path="/icon" component={IconDemo}></Route>
-                    <Route path="/button" component={ButtonDemo}></Route>
-                    <Route path="/modal" component={ModalDemo}></Route>
-                    <Route path="/layout" component={LayoutDemo}></Route>
-                    <Route path="/switch" component={SwitchDemo}></Route>
-                    <Route path="/input" component={InputDemo}></Route>
-                    <Route path="/form" component={FormDemo}></Route>
-                    <Route path="/introduction" component={Introduction}></Route>
+                    <Switch>
+                        <Route path="/icon" component={IconDemo}></Route>
+                        <Route path="/button" component={ButtonDemo}></Route>
+                        <Route path="/modal" component={ModalDemo}></Route>
+                        <Route path="/layout" component={LayoutDemo}></Route>
+                        <Route path="/switch" component={SwitchDemo}></Route>
+                        <Route path="/input" component={InputDemo}></Route>
+                        <Route path="/form" component={FormDemo}></Route>
+                        <Route path="/introduction" component={Introduction}></Route>
+                        <Route path="/" component={Introduction}></Route>
+                    </Switch>
                 </Content>
             </Layout>
         </Layout>
