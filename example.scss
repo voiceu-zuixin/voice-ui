@@ -89,7 +89,8 @@ body {
             & .display {
                 display: grid;
                 gap: 16px;
-                grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr);
+                grid-template-columns: minmax(235px, 665px) minmax(235px, 665px);
+                // grid-template-columns: minmax(0px, 1fr) minmax(0px, 1fr);
                 align-items: flex-start;
                 padding-bottom: 20px;
 
@@ -104,7 +105,7 @@ body {
                     border: 1px solid rgb(218, 215, 215);
                     display: flex;
                     flex-direction: column;
-                    width: 100%;
+                    // width: 100%;
                     box-sizing: border-box;
                     position: relative;
                     transition: color .3s cubic-bezier(0.4, 0, 0.2, 1),
@@ -214,7 +215,7 @@ body {
 
 .site-aside {
     border-right: 1px solid #EEEEEE;
-    width: 260px;
+    width: 280px;
 
     h2 {
         padding: $padding;

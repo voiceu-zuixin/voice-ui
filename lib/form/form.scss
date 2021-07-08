@@ -2,7 +2,7 @@ $main-color: #13c2c2;
 $ligten-color: #36cfc9;
 $higten-color: #08979c;
 
-$prefix: cu;
+$prefix: voice-ui;
 
 $colors: (red: #f1453d,
   green: #8cc152,
@@ -115,6 +115,7 @@ $transition-duration: 200ms;
   &-error {
     font-size: $font-size-small;
     color: red;
+    
   }
 
   &-vertical &-error {

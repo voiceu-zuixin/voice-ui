@@ -1,5 +1,5 @@
 import { isEmpty } from '../helper/utils'
-import {FormValue} from './form';
+import { FormValue } from './form';
 
 type Rules = Array<{
   name: string,
@@ -14,7 +14,7 @@ export interface Errors {
   [K: string]: string[]
 }
 
-const addError = (rule: string[], message:string): void => {
+const addError = (rule: string[], message: string): void => {
   rule.push(message)
 }
 

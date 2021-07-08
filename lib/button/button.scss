@@ -3,7 +3,7 @@
 $ligten-color: #36cfc9;
 $higten-color: #08979c;
 
-$prefix: cu;
+$prefix: voice-ui;
 
 $colors: (red: #f1453d,
   green: #8cc152,
@@ -60,7 +60,7 @@ $transition-duration: 200ms;
   }
 }
 
-.cc-button {
+.voice-ui-button {
   outline: 0;
   line-height: 1.499;
   position: relative;

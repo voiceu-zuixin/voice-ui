@@ -45,13 +45,13 @@ ReactDOM.render(
                             <NavLink to="/layout">布局 Layout</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/switch">开关 switch</NavLink>
+                            <NavLink to="/switch">开关 Switch</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/input">输入框 input</NavLink>
+                            <NavLink to="/input">输入框 Input</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/form">表单 form</NavLink>
+                            <NavLink to="/form">表单 Form</NavLink>
                         </li>
                     </ul>
                 </Aside>
