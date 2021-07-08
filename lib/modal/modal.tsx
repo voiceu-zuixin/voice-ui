@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import './modal.scss'
 import { Icon } from '../index'
 import { scopedClassMaker } from '../helper/scopedClassMaker'
+import { Button } from '../index'
 
 
 // 不是 对象的写法 ,
@@ -46,7 +47,7 @@ const Modal: React.FunctionComponent<ModalProps> = (props) => {
                     {/* {props.buttons&&props.buttons.length>0&&()} */}
                     <footer className={sc("footer")}>
                         {props.buttons && props.buttons.map((btn, index) =>
-                            React.cloneElement(btn, { key: index })
+                            React.cloneElement(btn, { key: index,className:'modal-innerBtn' })
                         )}
                     </footer>
                 </div>
@@ -73,7 +74,7 @@ const alert = (content: string) => {
         <Modal
             visible={true}
             buttons={[
-                <button onClick={close}>我知道啦</button>
+                <Button onClick={close}>我知道啦</Button>
             ]}
             onClose={close}
             onCloseMask={false}
@@ -103,8 +104,8 @@ const confirm = (content: string, yes?: () => void, no?: () => void) => {
             onClose={onNo}
             onCloseMask={false}
             buttons={[
-                <button onClick={onYes}>yes</button>,
-                <button onClick={onNo}>no</button>
+                <Button onClick={onYes}>yes</Button>,
+                <Button onClick={onNo}>no</Button>
             ]}
         >
             {content}

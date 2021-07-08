@@ -9,5 +9,7 @@ export { Footer } from './layout/layout'
 export { Content } from './layout/layout'
 export { Aside } from './layout/layout'
 export { default as Modal } from './modal/modal'
+export { confirm } from './modal/modal'
+export { alert } from './modal/modal'
 export { default as Switch } from './switch/switch'
 

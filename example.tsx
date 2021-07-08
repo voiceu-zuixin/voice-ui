@@ -10,7 +10,8 @@ import FormDemo from './lib/form/demo/form.demo'
 import InputDemo from './lib/input/input-example/input.demo'
 import SwitchExample from './lib/switch/switch.example'
 
-import ModalExample from './lib/modal/modal.example'
+// import ModalExample from './lib/modal/modal-example/modal.example.1'
+import ModalDemo from './lib/modal/modal-example/modal.demo'
 import LayoutExample from './lib/layout/layout.example'
 import { Layout, Aside, Header, Content, Footer } from './lib/layout/layout'
 const logo = require('./logo.png')
@@ -57,7 +58,7 @@ ReactDOM.render(
                 <Content className="site-main">
                     <Route path="/icon" component={IconDemo}></Route>
                     <Route path="/button" component={ButtonDemo}></Route>
-                    <Route path="/modal" component={ModalExample}></Route>
+                    <Route path="/modal" component={ModalDemo}></Route>
                     <Route path="/layout" component={LayoutExample}></Route>
                     <Route path="/switch" component={SwitchExample}></Route>
                     <Route path="/input" component={InputDemo}></Route>
