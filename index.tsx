@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter as Router, Route, NavLink, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, NavLink, Switch, Redirect } from 'react-router-dom'
 import IconDemo from './lib/icon/icon.demo'
 import ButtonDemo from './lib/button/button-example/button.demo'
 import FormDemo from './lib/form/demo/form.demo'
@@ -8,7 +8,7 @@ import InputDemo from './lib/input/input-example/input.demo'
 import SwitchDemo from './lib/switch/switch-example/switch.demo'
 import ModalDemo from './lib/modal/modal-example/modal.demo'
 import LayoutDemo from './lib/layout/layout-example/layout.demo'
-import { Layout, Aside, Header, Content, Footer } from './lib/layout/layout'
+import { Layout, Aside, Header, Content, Footer, Icon } from './lib/index'
 import './index.scss'
 import Introduction from './webIntroduce/introduction'
 
@@ -22,6 +22,17 @@ ReactDOM.render(
                     <img src={logo.default} width="48" height="48" alt="" />
                     <span>Voice UI</span>
                 </div>
+                <a href="https://github.com/voiceu-zuixin" target='_blank' className="site-header-left">
+                    <div className="site-header-left-icon">
+                        <Icon name='github' />
+                    </div>
+                    <div className="site-header-left-text">
+                        github
+                    </div>
+                    <div className="site-header-left-text">
+                        v&nbsp;0.1.1
+                    </div>
+                </a>
             </Header>
 
             <Layout>
@@ -58,6 +69,28 @@ ReactDOM.render(
                             <NavLink to="/form">表单 Form</NavLink>
                         </li>
                     </ul>
+
+
+                    <h2 className="site-aside-title" style={{ color: 'black' }}>其他个人项目</h2>
+                    <ul>
+                        <li>
+                            {/* <NavLink to="/Acoustica-mixer">Acoustica mixer</NavLink> */}
+                            <a href="https://voiceu-zuixin.github.io/Acoustica-mixer/" target='_blank'>
+                                Acoustica mixer
+                            </a>
+                        </li>
+                        <li>
+                            <NavLink to="/management-system">电商后台管理系统</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/resume">resume(算简历，还不算项目)</NavLink>
+                        </li>
+                        <li>
+                            <a href="https://blog.csdn.net/Voiceu?spm=1000.2115.3001.5343&type=lately" target='_blank'>
+                                技术博客
+                            </a>
+                        </li>
+                    </ul>
                 </Aside>
 
                 <Content className="site-main">
@@ -71,6 +104,7 @@ ReactDOM.render(
                         <Route path="/form" component={FormDemo}></Route>
                         <Route path="/introduction" component={Introduction}></Route>
                         <Route path="/" component={Introduction}></Route>
+                        <Redirect to='/introduction' />
                     </Switch>
                 </Content>
             </Layout>

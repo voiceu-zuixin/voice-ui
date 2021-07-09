@@ -45,10 +45,10 @@ export default function Introduction() {
 
         <ul className='doc-introduction-ul'>
           <li>
-            项目基本上采用 TypeScript 开发，TS开发真的好，没有文档的时候直接 ctrl+左键就知道类型了
+            项目基本上采用 TypeScript 开发，TS开发真好用，没有文档的时候直接 ctrl+左键就知道类型了
           </li>
           <li>
-            不使用脚手架搭建项目，搭建过程中遇到很多问题，挨个解决后收获巨大，并做了记录，对 webpack 认识提升
+            不使用脚手架搭建项目，搭建过程中遇到很多问题，挨个解决后收获巨大，并做了记录，对 webpack 的配置认识提升
           </li>
           <li>
             React 函数式编程与类式编程并用，提高了对 hooks 的认识
