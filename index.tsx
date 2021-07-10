@@ -22,7 +22,7 @@ ReactDOM.render(
                     <img src={logo.default} width="48" height="48" alt="" />
                     <span>Voice UI</span>
                 </div>
-                <a href="https://github.com/voiceu-zuixin" target='_blank' className="site-header-left">
+                <a href="https://github.com/voiceu-zuixin/voice-ui" target='_blank' className="site-header-left">
                     <div className="site-header-left-icon">
                         <Icon name='github' />
                     </div>
