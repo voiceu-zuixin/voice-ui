@@ -12,10 +12,10 @@ npm i echarts --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/echar
 npm i react-scripts --save-dev --sass_binary_site=https://npm.taobao.org/mirrors/react-scripts/
 
 /^v[0-9]+(\.[0-9]+)*(-.*)*/
-
-
             branches:
               ignore: /.*/
 
+
+              
 所以想问一下这个项目目的就只是部署一个静态ui网站，来增加面试项目的，还是说发布npm出来也可以用，只是老师忘了在webpack里面配置什么了
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
